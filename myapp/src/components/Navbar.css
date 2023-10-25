@@ -333,14 +333,15 @@ form {
 }
 
 input{
-  padding: 25x, 25px;
+  
+  padding: 10px;
   background-color: #3F3456;
   border: 10;
   border-radius: 5px;
   outline: none;
   margin-right: 1px;
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 25px;
 }
 .Menu{
     position: absolute;
@@ -408,6 +409,44 @@ input{
   .menu-icon {
     display: none;
   }
+
+  .btn-3{
+    background-color: #FF5A2C;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.contact-content {
+  margin: 50px 0;
+  background-color: #2A223A;
+  text-align: center ;
+  padding: 50px ;
+  border-radius: 20px;
+}
+
+
+footer{
+   margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+.link ul {
+    display: flex;
+
+}
+
+.link ul li > a{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 20px;
+
+}
+.link ul li > a:hover{
+    color: #FF5A2C;
+
+}  
   
   @media screen and (max-width: 960px) {
     .navbar {
@@ -468,7 +507,10 @@ input{
   
 
 .welcome-message {
-    margin-left: 10px;
-    font-size: 16px;
-    color: #fff;
+  
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(218, 12, 12);
+    max-height: 20px;
+    font-weight: 600;
   }

@@ -41,15 +41,25 @@ function Navbar() {
         <li><a href = "#" >Servicios</a></li>
         <li><a href = "#" >Productos</a></li>
         <li><a href = "#" >Contacto</a></li>
-
-        <li><a href = '#' >Iniciar Sesion</a>
-        <Link to='/' className='nav-links' onClick={closeMobileMenu}> 
-         </Link>
+        <li>
+     {isAuthenticated ? (
+            <LogoutButton />
+          ) : (
+            <LoginButton />
+          )}
         </li>
         <li><a href = "#" >Registro</a></li>
         </ul>
        </nav>
+        
     </label>
+    {isAuthenticated && (
+            <li>
+                <li>
+            <p className="welcome-message">{user.name}!</p>
+            </li>
+            </li>
+          )}
     </div>
       </nav>
       <div class="header-content container">
@@ -213,8 +223,10 @@ function Navbar() {
     <div class="contact-content">
         <h3>Subscribete a nuestro blog</h3>
       <form> 
-       
+      <input type="email" placeholder="Escribe tu correo"></input>
+      <input type="submit" class="btn-3" value="Enviar"></input>
       </form>
+      
     </div>
 
 </section>
@@ -233,15 +245,7 @@ function Navbar() {
     </div>
 
 </footer>
-           {isAuthenticated ? (
-            <LogoutButton />
-          ) : (
-            <LoginButton />
-          )}
-
-          {isAuthenticated && (
-            <p className="welcome-message">¡Bienvenid@, {user.name}!</p>
-          )}
+          
     </>
   );
 }

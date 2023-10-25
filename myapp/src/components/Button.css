@@ -19,18 +19,26 @@
   
   .btn--outline {
     background-color: transparent;
-    color: #fff;
-    padding: 8px 20px;
-    border: 1px solid var(--primary);
-    transition: all 0.3s ease-out;
+    font-size: 20px;
+    padding: 3.5px;
+    color: rgb(218, 12, 12);
+    font-weight: 600;
+    display: block;
   }
 
   .btn--logout {
     background-color: transparent;
-    color: #fff;
-    padding: 8px 20px;
-    border: 1px solid var(--primary);
-    transition: all 0.3s ease-out;
+    font-size: 20px;
+    padding: 23.5px ;
+    color: rgb(218, 12, 12);
+    font-weight: 600;
+    display: block;
+    border: transparent;
+    
+  }
+
+  .btn--logout:hover{
+    color: rgb(231, 135, 9);
   }
   
   
@@ -46,8 +54,7 @@
   
   .btn--medium:hover,
   .btn--large:hover {
-    background: #fff;
-    color: #242424;
+    color: rgb(231, 135, 9);
     transition: all 0.3s ease-out;
   }
   
